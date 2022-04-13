@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OvalView">
+        <attr name="bigRadius" format="dimension"/>
+        <attr name="smallRadius" format="dimension"/>
+        <attr name="ovalColor" format="color"/>
+        <attr name="linesColor" format="color"/>
+    </declare-styleable>
+</resources>
