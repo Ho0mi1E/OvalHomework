@@ -5,5 +5,11 @@
         <attr name="smallRadius" format="dimension"/>
         <attr name="ovalColor" format="color"/>
         <attr name="linesColor" format="color"/>
+        <attr name="thickness" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PacmanView">
+        <attr name="pacmanColor" format="color"/>
+        <attr name="eyeColor" format="color"/>
     </declare-styleable>
 </resources>
