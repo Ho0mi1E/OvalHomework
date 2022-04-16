@@ -53,8 +53,8 @@ class PacmanView(context: Context, attrs: AttributeSet) : View(context, attrs) {
             field = value
         }
 
-    private val animationMouthUp: ValueAnimator
-        get() = ValueAnimator.ofFloat(startAngle, ANGLE_MOUTH_UP, startAngle)
+    private val animationMouthDown: ValueAnimator
+        get() = ValueAnimator.ofFloat(startAngle, ANGLE_MOUTH_DOWN, startAngle)
             .apply {
                 duration = TIME_ANIMATION
                 repeatCount = ValueAnimator.INFINITE
@@ -64,8 +64,8 @@ class PacmanView(context: Context, attrs: AttributeSet) : View(context, attrs) {
                 }
             }
 
-    private val animationMouthDown: ValueAnimator
-        get() = ValueAnimator.ofFloat(sweepAngle, ANGLE_MOUTH_DOWN, sweepAngle)
+    private val animationMouthUp: ValueAnimator
+        get() = ValueAnimator.ofFloat(sweepAngle, ANGLE_MOUTH_UP, sweepAngle)
             .apply {
                 repeatCount = ValueAnimator.INFINITE
                 duration = TIME_ANIMATION
@@ -108,7 +108,7 @@ class PacmanView(context: Context, attrs: AttributeSet) : View(context, attrs) {
     }
 
     fun startAnimation() {
-        animationMouthUp.start()
-        animationMouthDown.start()
+        this.animationMouthDown.start()
+        this.animationMouthUp.start()
     }
 }
